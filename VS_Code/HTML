@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Chaibi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">LogoPlaceHolder</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>My Life Journey</h1>
+                <p>A journey through the most important milestones of my life</p>
+                <a href="#timeline" class="btn">Explore Timeline</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-header">
+                    <div class="about-title">About Me</div>
+                </div>
+                <div class="about-content">
+                    <div style="text-align: center;">
+                        <div class="about-image" style="margin-bottom: 2rem;">
+                            <img src="profile-picture.jpg" alt="Elias Chaibi" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 5px solid #3498db; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                        </div>
+                        <div class="about-text" style="max-width: 600px; margin: 0 auto;">
+                            <p style="font-size: 1.1rem; line-height: 1.8; color: #444; text-align: center; margin-bottom: 2rem;">
+                                Hello! I'm Elias Chaibi, a passionate International Media and Computing (Bachelor) undergraduate at HTW Berlin. My journey into the world of technology began early playing video games with my brother as a child, which led to me growing up with a fascination for computers and technology influencing my decision to choose Informatik as my compulsory subject. I have since continuously worked on expanding my skills in software development.
+                            </p>
+                            <p style="font-size: 1.1rem; line-height: 1.8; color: #444; text-align: center; margin-bottom: 2rem;">
+                                From my first steps in programming to more complex projects like my 2D platformer - I love finding creative solutions to technical challenges. My goal is to develop innovative software that people can interact with in their daily life.
+                            </p>
+                            <p style="font-size: 1.1rem; line-height: 1.8; color: #444; text-align: center; margin-bottom: 3rem;">
+                                When I'm not coding, I enjoy exploring new technologies especially in the area of virtual reality, reading about the latest developments in the tech world, or working on personal projects that challenge my creativity, however, I always make sure to balance my time with other interests and activities outside of tech.
+                            </p>
+                        </div>
+                        <div style="text-align: center;">
+                            <button class="back-btn" onclick="showTimeline()">Back to Timeline</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <h2 style="text-align: center; color: #2c3e50; margin-bottom: 3rem; font-size: 2.5rem;">My Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item left" onclick="showDetail('milestone1')">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mai 2025</div>
+                        <div class="timeline-title">first job</div>
+                        <div class="timeline-preview">Doing something and being paid for it...</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right" onclick="showDetail('milestone2')">
+                    <div class="timeline-content">
+                        <div class="timeline-date">October 2024</div>
+                        <div class="timeline-title">Started University</div>
+                        <div class="timeline-preview">First steps into higher education...</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left" onclick="showDetail('milestone3')">
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2024</div>
+                        <div class="timeline-title">Graduated High School</div>
+                        <div class="timeline-preview">Successful completion of my high school education...</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right" onclick="showDetail('milestone4')">
+                    <div class="timeline-content">
+                        <div class="timeline-date">March 2024</div>
+                        <div class="timeline-title">Build A 2D Platformer</div>
+                        <div class="timeline-preview">My first major project...</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left" onclick="showDetail('milestone5')">
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2023</div>
+                        <div class="timeline-title">School Internship</div>
+                        <div class="timeline-preview">First practical experience in the working world...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Sections -->
+    <section class="detail-section" id="milestone1">
+        <div class="container">
+            <div class="detail-header">
+                <div class="detail-title">First Job</div>
+                <div class="detail-date">May 2025</div>
+            </div>
+            <div class="detail-content">
+                <div class="detail-text">
+                    My first job was a unique experience that allowed me to learn what it means to work in a professional environment. Unlike an internship, I was responsible for my own tasks and had to manage my time effectively. It was a great opportunity and taught me that my skills can be valuable in the real world. The first paycheck was a great feeling, and it motivated me to continue working hard. Although the job was not directly related to my field of study and only lasted a short time, it helped me develop important soft skills such as teamwork, communication, and problem-solving.
+                </div>
+                <div style="text-align: center;">
+                    <div class="media-item" style="margin-bottom: 1.5rem;">
+                        <a href="#" onclick="alert('Employment contract PDF not available'); return false;" style="text-decoration: none; color: inherit;">
+                            <div style="display: inline-block; padding: 1.5rem; border: 3px solid #34495e; border-radius: 8px; background-color: #f8f9fa; max-width: 300px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <div style="text-align: center;">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="#e74c3c" style="margin-bottom: 0.75rem;">
+                                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                    </svg>
+                                    <h4 style="margin: 0 0 0.3rem 0; color: #2c3e50; font-size: 1rem;">Employment Contract</h4>
+                                    <p style="margin: 0; color: #7f8c8d; font-size: 0.85rem;">PDF Document</p>
+                                    <p style="margin: 0.3rem 0 0 0; color: #95a5a6; font-size: 0.8rem; font-style: italic;">📄 Will be added</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="media-caption" style="font-size: 1rem; margin-top: 0.75rem;">My first employment contract</div>
+                    </div>
+                    <div class="media-item">
+                        <p style="color: #7f8c8d; font-size: 0.9rem; margin: 1rem 0;">
+                            📍 <span style="color: #3498db; font-style: italic;">
+                                <a href="https://www.das-lernzentrum.de/home" target="_blank" style="color: #3498db; text-decoration: underline;">
+                                    Das Lernzentrum
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="back-btn" onclick="showTimeline()">Back to Timeline</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section" id="milestone2">
+        <div class="container">
+            <div class="detail-header">
+                <div class="detail-title">Started University</div>
+                <div class="detail-date">October 2024</div>
+            </div>
+            <div class="detail-content">
+                <div class="detail-text">
+                    The first weeks at university were both exciting and challenging. I quickly discovered how much there is to learn and how inspiring it is to be surrounded by people who share my passion for technology. Starting my studies was a big step in my academic journey, opening up new opportunities and helping me grow both personally and professionally. The courses are demanding but rewarding, and I am looking forward to everything that lies ahead.
+                </div>
+                <div style="text-align: center;">
+                    <div class="media-item" style="margin-bottom: 1.5rem;">
+                        <a href="immabescheinigung_eneb54264c-ee39-445d-bb18-5c7d801375f6.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div style="display: inline-block; padding: 1.5rem; border: 3px solid #34495e; border-radius: 8px; background-color: #f8f9fa; max-width: 300px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <div style="text-align: center;">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="#e74c3c" style="margin-bottom: 0.75rem;">
+                                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                    </svg>
+                                    <h4 style="margin: 0 0 0.3rem 0; color: #2c3e50; font-size: 1rem;">Enrollment Certificate</h4>
+                                    <p style="margin: 0; color: #7f8c8d; font-size: 0.85rem;">PDF Document</p>
+                                    <p style="margin: 0.3rem 0 0 0; color: #3498db; font-size: 0.8rem; font-weight: bold;">📄 Click to open</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="media-caption" style="font-size: 1rem; margin-top: 0.75rem;">My official enrollment certificate</div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="back-btn" onclick="showTimeline()">Back to Timeline</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section" id="milestone3">
+        <div class="container">
+            <div class="detail-header">
+                <div class="detail-title">Graduated High School</div>
+                <div class="detail-date">June 2024</div>
+            </div>
+            <div class="detail-content">
+                <div class="detail-text">
+                 Passing the Abitur was a major milestone and the end of an important phase of life. Despite the challenges posed by the pandemic, we were able to successfully complete our exams. It was a feeling of relief and pride at the same time, and it opened the doors to the next chapter of life, as my Abitur interduced me to the world of computer Science.
+                </div>
+                <div style="text-align: center;">
+                    <div class="media-item" style="margin-bottom: 1.5rem;">
+                        <a href="#" onclick="alert('High school diploma PDF not available'); return false;" style="text-decoration: none; color: inherit;">
+                            <div style="display: inline-block; padding: 1.5rem; border: 3px solid #34495e; border-radius: 8px; background-color: #f8f9fa; max-width: 300px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                <div style="text-align: center;">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="#e74c3c" style="margin-bottom: 0.75rem;">
+                                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                    </svg>
+                                    <h4 style="margin: 0 0 0.3rem 0; color: #2c3e50; font-size: 1rem;">High School Diploma</h4>
+                                    <p style="margin: 0; color: #7f8c8d; font-size: 0.85rem;">PDF Document</p>
+                                    <p style="margin: 0.3rem 0 0 0; color: #95a5a6; font-size: 0.8rem; font-style: italic;">📄 Will be added</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="media-caption" style="font-size: 1rem; margin-top: 0.75rem;">My high school diploma</div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="back-btn" onclick="showTimeline()">Back to Timeline</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section" id="milestone4">
+        <div class="container">
+            <div class="detail-header">
+                <div class="detail-title">Build 2D-Platformer</div>
+                <div class="detail-date">March 2024</div>
+            </div>
+            <div class="detail-content">
+                <div class="detail-text">
+                    My first major project that I implemented was a 2D platformer. It was an exciting challenge that helped me deepen my programming skills and strengthen my understanding of game design as well as project & group management. The project was implemented in Processing, and it was incredibly satisfying to see the finished game.
+                </div>
+                <div style="text-align: center;">
+                    <div class="media-item" style="margin-bottom: 2rem;">
+                        <img src="screenshot-2d-platformer.png" alt="2D Platformer Screenshot" style="width: 100%; max-width: 800px; height: auto; border: 3px solid #34495e; border-radius: 8px;">
+                        <div class="media-caption" style="font-size: 1rem; margin-top: 1rem;">Screenshot from my 2D platformer game</div>
+                    </div>
+                    <div class="media-item">
+                        <a href="https://github.com/Elias-Chaibi/Processing-2D-Jump-And-Run" target="_blank" style="text-decoration: none;">
+                            <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub Repository" style="width: 120px; height: auto;">
+                            <div class="media-caption" style="color: #3498db; font-size: 0.9rem; margin-top: 0.5rem;">
+                                🔗 View GitHub Repository
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="back-btn" onclick="showTimeline()">Back to Timeline</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section" id="milestone5">
+        <div class="container">
+            <div class="detail-header">
+                <div class="detail-title">School Internship</div>
+                <div class="detail-date">June 2023</div>
+            </div>
+            <div class="detail-content">
+                <div class="detail-text">
+                    My first internship was an eye-opening experience. For the first time, I was able to gain practical experience in the working world and learn what it's like to work in a professional environment. It was a valuable time that helped me learn about multiple fields of video production. My tasks included assisting in video shoots, editing footage, and learning about the production process. I gained a lot of practical knowledge and made valuable contacts that will help me in my future career. 
+                </div>
+                <div style="text-align: center;">
+                    <div class="media-item" style="margin-bottom: 2rem;">
+                        <iframe 
+                            src="https://www.youtube.com/embed/FPj2XPFpExs" 
+                            style="width: 100%; max-width: 800px; height: 450px; border: 3px solid #34495e; border-radius: 8px;"
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="media-caption" style="font-size: 1rem; margin-top: 1rem;">A Video which I edited</div>
+                    </div>
+                    <div class="media-item">
+                        <p style="color: #7f8c8d; font-size: 0.9rem; margin: 1rem 0;">
+                            📍 <span style="color: #3498db; font-style: italic;">
+                                <a href="https://www.youtube.com/@safe_offiziell" target="_blank" style="color: #3498db; text-decoration: underline;">
+                                    SAFE YouTube Channel
+                                </a>
+                            </span></span>
+                        </p>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="back-btn" onclick="showTimeline()">Back to Timeline</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>E-Mail</h3>
+                    <p>Elias.Chaibi@Student.HTW-Berlin.de</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p>+49 176 3016 2380</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>My Links</h4>
+                    <ul>
+                        <li><a href="https://github.com">GitHub</a></li>
+                        <li><a href="mailto:Elias.Chaibi@Student.HTW-Berlin.de">My Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/elias-chaibi-584804371">LinkedIn</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showDetail(milestoneId) {
+            const timelineSection = document.querySelector('.timeline-section');
+            const contactSection = document.querySelector('.contact-section');
+            const heroSection = document.querySelector('.hero');
+            const clickedItem = event.target.closest('.timeline-item');
+            
+            // Add focus effect to clicked item
+            clickedItem.classList.add('zoom-focus');
+            timelineSection.classList.add('transitioning');
+            
+            // Hide contact section smoothly
+            contactSection.classList.add('hidden');
+            
+            setTimeout(() => {
+                // Hide timeline, contact, and hero sections
+                timelineSection.style.display = 'none';
+                contactSection.style.display = 'none';
+                heroSection.style.display = 'none';
+                
+                // Reset timeline classes
+                timelineSection.classList.remove('transitioning');
+                document.querySelectorAll('.timeline-item').forEach(item => {
+                    item.classList.remove('zoom-focus');
+                });
+                
+                // Hide all detail sections
+                const allDetails = document.querySelectorAll('.detail-section');
+                allDetails.forEach(section => {
+                    section.classList.remove('active');
+                });
+                
+                // Show selected detail section
+                const targetDetail = document.getElementById(milestoneId);
+                targetDetail.classList.add('active');
+                
+                // Scroll to top smoothly
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                
+            }, 500);
+        }
+
+        function showTimeline() {
+            const allDetails = document.querySelectorAll('.detail-section');
+            const timelineSection = document.querySelector('.timeline-section');
+            const contactSection = document.querySelector('.contact-section');
+            const heroSection = document.querySelector('.hero');
+            const aboutSection = document.querySelector('.about-section');
+            
+            // Hide current detail and about sections
+            allDetails.forEach(section => {
+                section.classList.remove('active');
+            });
+            aboutSection.classList.remove('active');
+            
+            // Show timeline, contact, and hero sections
+            timelineSection.style.display = 'block';
+            contactSection.style.display = 'block';
+            heroSection.style.display = 'block';
+            
+            // Remove hidden class from contact section
+            contactSection.classList.remove('hidden');
+            
+            // Scroll to timeline section smoothly
+            setTimeout(() => {
+                document.querySelector('#timeline').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            }, 100);
+        }
+
+        // Smooth scrolling für Navigationslinks
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                
+                // Check if we're currently in a detail view
+                const activeDetail = document.querySelector('.detail-section.active');
+                const activeAbout = document.querySelector('.about-section.active');
+                
+                if (targetId === 'about') {
+                    // Show About section
+                    showAbout();
+                } else if (activeDetail || activeAbout) {
+                    // If in detail or about view, first return to timeline view
+                    showTimeline();
+                    
+                    // Then scroll to the target after timeline is shown
+                    setTimeout(() => {
+                        const target = document.getElementById(targetId);
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }, 200);
+                } else {
+                    // Normal navigation when in timeline view
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        function showAbout() {
+            const timelineSection = document.querySelector('.timeline-section');
+            const contactSection = document.querySelector('.contact-section');
+            const heroSection = document.querySelector('.hero');
+            const aboutSection = document.querySelector('.about-section');
+            
+            // Hide timeline, contact, and hero sections
+            timelineSection.style.display = 'none';
+            contactSection.style.display = 'none';
+            heroSection.style.display = 'none';
+            
+            // Hide all detail sections
+            const allDetails = document.querySelectorAll('.detail-section');
+            allDetails.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show about section
+            aboutSection.classList.add('active');
+            
+            // Scroll to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Add hover effect to timeline items
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                if (!document.querySelector('.timeline-section').classList.contains('transitioning')) {
+                    this.style.transform = 'translateY(-3px)';
+                }
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('zoom-focus')) {
+                    this.style.transform = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
